@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCENTRA — Décantes de Parfum d'Exception</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-main">SCENTRA</span>
+        <span class="logo-sub">Décantes d'Exception</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="maisons.html">Les Maisons</a></li>
+        <li><a href="commander.html">Commander</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-burger" id="navBurger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="index.html">Accueil</a>
+      <a href="collection.html">Collection</a>
+      <a href="maisons.html">Les Maisons</a>
+      <a href="commander.html">Commander</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-pattern"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">L'Essence du Luxe</p>
+      <h1 class="hero-title">
+        <span class="line-1">Découvrez</span>
+        <span class="line-2">les Plus Grands</span>
+        <span class="line-3">Parfums du Monde</span>
+      </h1>
+      <p class="hero-desc">
+        Xerjoff, Louis Vuitton, SHL 777, Mahajad — Les fragrances les plus prestigieuses, 
+        décantées avec soin dans des formats d'exception.
+      </p>
+      <div class="hero-cta">
+        <a href="collection.html" class="btn-primary"><span>Explorer la Collection</span></a>
+        <a href="maisons.html" class="btn-secondary">Les Maisons</a>
+      </div>
+    </div>
+    <div class="hero-scroll" onclick="document.querySelector('.strip').scrollIntoView({behavior:'smooth'})">
+      <span>Découvrir</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+  <section class="strip">
+    <div class="strip-inner">
+      <div class="strip-item">
+        <span class="strip-num">06</span>
+        <span class="strip-label">Fragrances Sélectionnées</span>
+      </div>
+      <div class="strip-divider"></div>
+      <div class="strip-item">
+        <span class="strip-num">100%</span>
+        <span class="strip-label">Authenticité Garantie</span>
+      </div>
+      <div class="strip-divider"></div>
+      <div class="strip-item">
+        <span class="strip-num">4</span>
+        <span class="strip-label">Grandes Maisons</span>
+      </div>
+      <div class="strip-divider"></div>
+      <div class="strip-item">
+        <span class="strip-num">3</span>
+        <span class="strip-label">Formats Disponibles</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP 3 PODIUM -->
+  <section class="podium-section">
+    <div class="podium-header section-header">
+      <p class="section-eyebrow">Best-Sellers</p>
+      <h2 class="section-title">Le Podium <em>de la Semaine</em></h2>
+    </div>
+
+    <div class="podium-container">
+
+      <!-- RANK 1 -->
+      <article class="podium-item rank-1">
+        <div class="podium-rank">1</div>
+        <div class="podium-img">
+          <svg class="podium-visual" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+            <!-- Xerjoff Alexandria II bottle -->
+            <defs>
+              <linearGradient id="gold1" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#d4b976;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#a68847;stop-opacity:1" />
+              </linearGradient>
+              <radialGradient id="glass1" cx="35%" cy="35%">
+                <stop offset="0%" style="stop-color:#fff;stop-opacity:0.6" />
+                <stop offset="100%" style="stop-color:#2d2418;stop-opacity:0.2" />
+              </radialGradient>
+            </defs>
+            <!-- Shadow -->
+            <ellipse cx="150" cy="370" rx="90" ry="15" fill="rgba(45,36,24,0.1)"/>
+            <!-- Bottle body -->
+            <rect x="110" y="180" width="80" height="160" rx="8" fill="url(#glass1)" stroke="#a68847" stroke-width="2"/>
+            <!-- Liquid inside -->
+            <rect x="115" y="200" width="70" height="135" rx="6" fill="#8B4513" opacity="0.7"/>
+            <!-- Cap -->
+            <rect x="130" y="150" width="40" height="30" rx="4" fill="url(#gold1)" stroke="#a68847" stroke-width="1.5"/>
+            <rect x="135" y="140" width="30" height="15" rx="2" fill="#d4b976"/>
+            <!-- Label area -->
+            <rect x="120" y="240" width="60" height="60" rx="3" fill="rgba(255,255,255,0.15)" stroke="#c9a961" stroke-width="1"/>
+            <!-- Decorative elements -->
+            <circle cx="150" cy="270" r="18" fill="none" stroke="#d4b976" stroke-width="1.5"/>
+            <text x="150" y="278" text-anchor="middle" font-family="serif" font-size="10" font-weight="700" fill="#d4b976">X</text>
+            <!-- Light reflection -->
+            <ellipse cx="125" cy="220" rx="8" ry="25" fill="white" opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="podium-content">
+          <p class="podium-house">Xerjoff</p>
+          <h3 class="podium-name">Alexandria II</h3>
+          <p class="podium-notes">Rose · Oud · Ambre · Santal</p>
+          <a href="collection.html#alexandria" class="podium-cta">
+            Découvrir <span>→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- RANK 2 -->
+      <article class="podium-item rank-2">
+        <div class="podium-rank">2</div>
+        <div class="podium-img">
+          <svg class="podium-visual" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+            <!-- Xerjoff Naxos bottle -->
+            <defs>
+              <linearGradient id="honey" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#d4a843;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#8b6914;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <ellipse cx="150" cy="370" rx="85" ry="14" fill="rgba(45,36,24,0.09)"/>
+            <!-- Bottle -->
+            <rect x="115" y="185" width="70" height="150" rx="6" fill="url(#glass1)" stroke="#a68847" stroke-width="2"/>
+            <rect x="120" y="205" width="60" height="125" rx="5" fill="#cd853f" opacity="0.75"/>
+            <!-- Cap -->
+            <rect x="132" y="158" width="36" height="27" rx="3" fill="url(#gold1)" stroke="#8b6914" stroke-width="1.5"/>
+            <circle cx="150" cy="170" r="6" fill="#d4b976"/>
+            <!-- Label -->
+            <rect x="125" y="250" width="50" height="50" rx="2" fill="rgba(255,255,255,0.2)" stroke="#c9a961" stroke-width="1"/>
+            <circle cx="150" cy="275" r="15" fill="none" stroke="#d4b976" stroke-width="1.5"/>
+            <text x="150" y="282" text-anchor="middle" font-family="serif" font-size="12" font-weight="700" fill="#c9a961">N</text>
+            <!-- Shine -->
+            <ellipse cx="130" cy="225" rx="7" ry="22" fill="white" opacity="0.35"/>
+          </svg>
+        </div>
+        <div class="podium-content">
+          <p class="podium-house">Xerjoff</p>
+          <h3 class="podium-name">Naxos</h3>
+          <p class="podium-notes">Miel · Lavande · Tabac</p>
+          <a href="collection.html#naxos" class="podium-cta">
+            Découvrir <span>→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- RANK 3 -->
+      <article class="podium-item rank-3">
+        <div class="podium-rank">3</div>
+        <div class="podium-img">
+          <svg class="podium-visual" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+            <!-- Louis Vuitton Immensité bottle -->
+            <defs>
+              <linearGradient id="lv-bottle" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#507050;stop-opacity:0.6" />
+                <stop offset="100%" style="stop-color:#2d4d2d;stop-opacity:0.8" />
+              </linearGradient>
+            </defs>
+            <ellipse cx="150" cy="370" rx="80" ry="13" fill="rgba(45,36,24,0.08)"/>
+            <!-- Square bottle -->
+            <rect x="120" y="190" width="60" height="145" rx="4" fill="url(#glass1)" stroke="#6b5e52" stroke-width="2"/>
+            <rect x="125" y="210" width="50" height="120" rx="3" fill="url(#lv-bottle)"/>
+            <!-- Cap -->
+            <rect x="135" y="162" width="30" height="28" rx="2" fill="#4a3f35" stroke="#2d2418" stroke-width="1.5"/>
+            <rect x="138" y="152" width="24" height="12" rx="1" fill="#6b5e52"/>
+            <!-- LV monogram -->
+            <rect x="130" y="250" width="40" height="40" rx="2" fill="rgba(255,255,255,0.15)" stroke="#6b5e52" stroke-width="1"/>
+            <text x="150" y="277" text-anchor="middle" font-family="serif" font-size="18" font-weight="700" fill="#6b5e52">LV</text>
+            <!-- Reflection -->
+            <rect x="128" y="220" width="10" height="80" rx="2" fill="white" opacity="0.25"/>
+          </svg>
+        </div>
+        <div class="podium-content">
+          <p class="podium-house">Louis Vuitton</p>
+          <h3 class="podium-name">Immensité</h3>
+          <p class="podium-notes">Cèdre · Vétiver · Cardamome</p>
+          <a href="collection.html#immensite" class="podium-cta">
+            Découvrir <span>→</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- COLLECTION PREVIEW -->
+  <section class="collection-preview">
+    <div class="section-header">
+      <p class="section-eyebrow">Notre Sélection</p>
+      <h2 class="section-title">Fragrances <em>d'Exception</em></h2>
+    </div>
+
+    <div class="fragrance-grid">
+
+      <!-- Hibiscus Mahajad -->
+      <article class="frag-card" data-house="mahajad">
+        <div class="card-img">
+          <svg class="card-visual" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="hibiscus" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#e891b0;stop-opacity:0.7" />
+                <stop offset="100%" style="stop-color:#c54d7a;stop-opacity:0.8" />
+              </linearGradient>
+            </defs>
+            <ellipse cx="150" cy="370" rx="75" ry="12" fill="rgba(45,36,24,0.07)"/>
+            <rect x="125" y="195" width="50" height="140" rx="5" fill="url(#glass1)" stroke="#c54d7a" stroke-width="2"/>
+            <rect x="130" y="215" width="40" height="115" rx="4" fill="url(#hibiscus)"/>
+            <rect x="140" y="168" width="20" height="27" rx="2" fill="#c54d7a"/>
+            <circle cx="150" cy="175" r="4" fill="#e891b0"/>
+            <rect x="135" y="260" width="30" height="30" rx="15" fill="rgba(255,255,255,0.2)" stroke="#e891b0" stroke-width="1"/>
+            <path d="M 150 268 L 147 275 L 150 280 L 153 275 Z" fill="#e891b0"/>
+            <ellipse cx="135" cy="235" rx="5" ry="18" fill="white" opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <p class="card-house">Mahajad</p>
+          <h3 class="card-name">Hibiscus Mahajad</h3>
+          <p class="card-notes">Hibiscus · Rose · Ambre</p>
+          <div class="card-footer">
+            <span class="card-family">Floral Oriental</span>
+            <a href="collection.html#hibiscus" class="card-link">→</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Torino 22 -->
+      <article class="frag-card" data-house="xerjoff">
+        <div class="card-img">
+          <svg class="card-visual" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="torino" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#4a7c9e;stop-opacity:0.7" />
+                <stop offset="100%" style="stop-color:#2d4d5f;stop-opacity:0.85" />
+              </linearGradient>
+            </defs>
+            <ellipse cx="150" cy="370" rx="78" ry="13" fill="rgba(45,36,24,0.08)"/>
+            <rect x="122" y="192" width="56" height="143" rx="6" fill="url(#glass1)" stroke="#2d4d5f" stroke-width="2"/>
+            <rect x="127" y="212" width="46" height="118" rx="5" fill="url(#torino)"/>
+            <rect x="137" y="165" width="26" height="27" rx="3" fill="url(#gold1)" stroke="#a68847" stroke-width="1.5"/>
+            <rect x="142" y="156" width="16" height="10" rx="2" fill="#d4b976"/>
+            <rect x="132" y="255" width="36" height="36" rx="2" fill="rgba(255,255,255,0.18)" stroke="#4a7c9e" stroke-width="1"/>
+            <text x="150" y="278" text-anchor="middle" font-family="serif" font-size="10" font-weight="700" fill="#4a7c9e">22</text>
+            <ellipse cx="133" cy="232" rx="6" ry="20" fill="white" opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <p class="card-house">Xerjoff</p>
+          <h3 class="card-name">Torino 22</h3>
+          <p class="card-notes">Cuir · Vétiver · Iris</p>
+          <div class="card-footer">
+            <span class="card-family">Fougère Aristocratique</span>
+            <a href="collection.html#torino" class="card-link">→</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- SHL God of Fire -->
+      <article class="frag-card" data-house="shl">
+        <div class="card-img">
+          <svg class="card-visual" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="fire" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#d04020;stop-opacity:0.5" />
+                <stop offset="100%" style="stop-color:#8b1a0a;stop-opacity:0.9" />
+              </linearGradient>
+            </defs>
+            <ellipse cx="150" cy="370" rx="82" ry="13" fill="rgba(45,36,24,0.09)"/>
+            <rect x="118" y="188" width="64" height="148" rx="7" fill="url(#glass1)" stroke="#8b1a0a" stroke-width="2"/>
+            <rect x="123" y="208" width="54" height="123" rx="6" fill="url(#fire)"/>
+            <rect x="133" y="158" width="34" height="30" rx="4" fill="#2d2418" stroke="#1a1410" stroke-width="1.5"/>
+            <circle cx="150" cy="172" r="7" fill="#8b1a0a"/>
+            <rect x="128" y="250" width="44" height="44" rx="22" fill="rgba(255,255,255,0.12)" stroke="#d04020" stroke-width="1.5"/>
+            <path d="M 150 260 Q 145 270 150 280 Q 155 270 150 260" fill="#d04020" opacity="0.6"/>
+            <ellipse cx="132" cy="228" rx="7" ry="23" fill="white" opacity="0.25"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <p class="card-house">S.HL 777</p>
+          <h3 class="card-name">God of Fire</h3>
+          <p class="card-notes">Encens · Cuir · Résine</p>
+          <div class="card-footer">
+            <span class="card-family">Chypré Boisé</span>
+            <a href="collection.html#godoffire" class="card-link">→</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="featured-more">
+      <a href="collection.html" class="btn-primary"><span>Voir Toute la Collection</span></a>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="philosophy">
+    <div class="phil-grid">
+      <div class="phil-visual">
+        <div class="phil-circle"></div>
+        <div class="phil-quote">
+          <p>"La fragrance est la forme la plus intime de la mémoire."</p>
+          <cite>— Jean-Claude Ellena</cite>
+        </div>
+      </div>
+      <div class="phil-text">
+        <p class="section-eyebrow">Notre Philosophie</p>
+        <h2>Le Parfum Sans<br><em>Compromis</em></h2>
+        <p>Chez SCENTRA, nous croyons que les plus grandes fragrances du monde doivent être accessibles à tous ceux qui les désirent — sans investir dans un flacon entier.</p>
+        <p>Chaque décante est réalisée avec un soin méticuleux, dans des conditions irréprochables, pour vous garantir une expérience olfactive fidèle à l'original.</p>
+        <a href="maisons.html" class="btn-secondary">Les Maisons Partenaires</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">SCENTRA</p>
+        <p class="footer-tagline">Décantes de Parfum d'Exception</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <p class="col-title">Navigation</p>
+          <a href="collection.html">Collection</a>
+          <a href="maisons.html">Les Maisons</a>
+          <a href="commander.html">Commander</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <p class="col-title">Informations</p>
+          <a href="commander.html#livraison">Livraison</a>
+          <a href="commander.html#faq">FAQ</a>
+          <a href="contact.html">Nous écrire</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 SCENTRA — Tous droits réservés.</p>
+      <p>Décantes réalisées avec authenticité et passion.</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

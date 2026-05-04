@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection — SCENTRA</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-main">SCENTRA</span>
+        <span class="logo-sub">Décantes d'Exception</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="collection.html" class="active">Collection</a></li>
+        <li><a href="maisons.html">Les Maisons</a></li>
+        <li><a href="commander.html">Commander</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-burger" id="navBurger"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="index.html">Accueil</a>
+      <a href="collection.html">Collection</a>
+      <a href="maisons.html">Les Maisons</a>
+      <a href="commander.html">Commander</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-line"></div>
+    <h1>La Collection <em>Complète</em></h1>
+    <p>Six fragrances d'exception, sélectionnées pour leur singularité et leur prestige absolu.</p>
+  </section>
+
+  <div class="collection-filters">
+    <span class="filter-label">Filtrer par maison :</span>
+    <button class="filter-btn active" data-filter="all">Toutes</button>
+    <button class="filter-btn" data-filter="xerjoff">Xerjoff</button>
+    <button class="filter-btn" data-filter="lv">Louis Vuitton</button>
+    <button class="filter-btn" data-filter="shl">SHL 777</button>
+    <button class="filter-btn" data-filter="mahajad">Mahajad</button>
+  </div>
+
+  <div class="collection-grid">
+
+    <!-- 1. Hibiscus Mahajad -->
+    <article class="product-card" data-house="mahajad" id="hibiscus">
+      <div class="product-img">
+        <svg class="product-visual" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="hibiscus-full" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:#e891b0;stop-opacity:0.7" />
+              <stop offset="100%" style="stop-color:#c54d7a;stop-opacity:0.8" />
+            </linearGradient>
+          </defs>
+          <ellipse cx="150" cy="370" rx="75" ry="12" fill="rgba(45,36,24,0.07)"/>
+          <rect x="125" y="195" width="50" height="140" rx="5" fill="rgba(249,247,244,0.4)" stroke="#c54d7a" stroke-width="2"/>
+          <rect x="130" y="215" width="40" height="115" rx="4" fill="url(#hibiscus-full)"/>
+          <rect x="140" y="168" width="20" height="27" rx="2" fill="#c54d7a"/>
+          <circle cx="150" cy="175" r="4" fill="#e891b0"/>
+          <rect x="135" y="260" width="30" height="30" rx="15" fill="rgba(255,255,255,0.2)" stroke="#e891b0" stroke-width="1"/>
+          <path d="M 150 268 L 147 275 L 150 280 L 153 275 Z" fill="#e891b0"/>
+          <ellipse cx="135" cy="235" rx="5" ry="18" fill="white" opacity="0.3"/>
+        </svg>
+        <span class="product-badge">Mahajad</span>
+      </div>
+      <div class="product-details">
+        <p class="product-house">Mahajad</p>
+        <h2 class="product-name">Hibiscus Mahajad</h2>
+        <p class="product-desc">Une ode florale solaire aux accents orientaux, portée par l'hibiscus éclatant des jardins d'Orient.</p>
+        <div class="product-pyramid">
+          <div class="pyramid-row">
+            <span class="pyramid-label">Tête</span>
+            <span class="pyramid-notes">Hibiscus, Bergamote, Mandarine</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Cœur</span>
+            <span class="pyramid-notes">Rose de Damas, Jasmin, Cannelle</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Fond</span>
+            <span class="pyramid-notes">Musc, Ambre, Bois de Santal</span>
+          </div>
+        </div>
+        <div class="product-formats">
+          <span class="format-tag">2 ml</span>
+          <span class="format-tag">5 ml</span>
+          <span class="format-tag">10 ml</span>
+        </div>
+        <div class="product-cta">
+          <a href="commander.html" class="btn-primary"><span>Commander</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2. Xerjoff Naxos -->
+    <article class="product-card" data-house="xerjoff" id="naxos">
+      <div class="product-img">
+        <svg class="product-visual" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="honey-full" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:#d4a843;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#8b6914;stop-opacity:1" />
+            </linearGradient>
+            <linearGradient id="gold-full" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:#d4b976;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#a68847;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <ellipse cx="150" cy="370" rx="85" ry="14" fill="rgba(45,36,24,0.09)"/>
+          <rect x="115" y="185" width="70" height="150" rx="6" fill="rgba(249,247,244,0.3)" stroke="#a68847" stroke-width="2"/>
+          <rect x="120" y="205" width="60" height="125" rx="5" fill="url(#honey-full)"/>
+          <rect x="132" y="158" width="36" height="27" rx="3" fill="url(#gold-full)" stroke="#8b6914" stroke-width="1.5"/>
+          <circle cx="150" cy="170" r="6" fill="#d4b976"/>
+          <rect x="125" y="250" width="50" height="50" rx="2" fill="rgba(255,255,255,0.2)" stroke="#c9a961" stroke-width="1"/>
+          <circle cx="150" cy="275" r="15" fill="none" stroke="#d4b976" stroke-width="1.5"/>
+          <text x="150" y="282" text-anchor="middle" font-family="serif" font-size="12" font-weight="700" fill="#c9a961">N</text>
+          <ellipse cx="130" cy="225" rx="7" ry="22" fill="white" opacity="0.35"/>
+        </svg>
+        <span class="product-badge">Xerjoff</span>
+      </div>
+      <div class="product-details">
+        <p class="product-house">Xerjoff</p>
+        <h2 class="product-name">Naxos</h2>
+        <p class="product-desc">Un oriental envoûtant qui capture la douceur méditerranéenne — miel, lavande et tabac se fondent en une symphonie opulente.</p>
+        <div class="product-pyramid">
+          <div class="pyramid-row">
+            <span class="pyramid-label">Tête</span>
+            <span class="pyramid-notes">Bergamote, Lavande, Citron</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Cœur</span>
+            <span class="pyramid-notes">Miel, Tabac, Néroli</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Fond</span>
+            <span class="pyramid-notes">Vanille, Tonka, Musc, Benjoin</span>
+          </div>
+        </div>
+        <div class="product-formats">
+          <span class="format-tag">2 ml</span>
+          <span class="format-tag">5 ml</span>
+          <span class="format-tag">10 ml</span>
+        </div>
+        <div class="product-cta">
+          <a href="commander.html" class="btn-primary"><span>Commander</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3. Xerjoff Torino 22 -->
+    <article class="product-card" data-house="xerjoff" id="torino">
+      <div class="product-img">
+        <svg class="product-visual" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="torino-full" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:#4a7c9e;stop-opacity:0.7" />
+              <stop offset="100%" style="stop-color:#2d4d5f;stop-opacity:0.85" />
+            </linearGradient>
+          </defs>
+          <ellipse cx="150" cy="370" rx="78" ry="13" fill="rgba(45,36,24,0.08)"/>
+          <rect x="122" y="192" width="56" height="143" rx="6" fill="rgba(249,247,244,0.3)" stroke="#2d4d5f" stroke-width="2"/>
+          <rect x="127" y="212" width="46" height="118" rx="5" fill="url(#torino-full)"/>
+          <rect x="137" y="165" width="26" height="27" rx="3" fill="url(#gold-full)" stroke="#a68847" stroke-width="1.5"/>
+          <rect x="142" y="156" width="16" height="10" rx="2" fill="#d4b976"/>
+          <rect x="132" y="255" width="36" height="36" rx="2" fill="rgba(255,255,255,0.18)" stroke="#4a7c9e" stroke-width="1"/>
+          <text x="150" y="278" text-anchor="middle" font-family="serif" font-size="10" font-weight="700" fill="#4a7c9e">22</text>
+          <ellipse cx="133" cy="232" rx="6" ry="20" fill="white" opacity="0.3"/>
+        </svg>
+        <span class="product-badge">Xerjoff</span>
+      </div>
+      <div class="product-details">
+        <p class="product-house">Xerjoff</p>
+        <h2 class="product-name">Torino 22</h2>
+        <p class="product-desc">Un fougère sophistiqué d'une profondeur aristocratique. Notes marines et cuirées tissées sur fond de bois précieux italiens.</p>
+        <div class="product-pyramid">
+          <div class="pyramid-row">
+            <span class="pyramid-label">Tête</span>
+            <span class="pyramid-notes">Aldéhydes, Bergamote, Eucalyptus</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Cœur</span>
+            <span class="pyramid-notes">Cuir, Vétiver, Iris, Violette</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Fond</span>
+            <span class="pyramid-notes">Cèdre, Mousse de Chêne, Musc</span>
+          </div>
+        </div>
+        <div class="product-formats">
+          <span class="format-tag">2 ml</span>
+          <span class="format-tag">5 ml</span>
+          <span class="format-tag">10 ml</span>
+        </div>
+        <div class="product-cta">
+          <a href="commander.html" class="btn-primary"><span>Commander</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 4. Xerjoff Alexandria II -->
+    <article class="product-card" data-house="xerjoff" id="alexandria">
+      <div class="product-img">
+        <svg class="product-visual" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="glass-alex" cx="35%" cy="35%">
+              <stop offset="0%" style="stop-color:#fff;stop-opacity:0.6" />
+              <stop offset="100%" style="stop-color:#2d2418;stop-opacity:0.2" />
+            </radialGradient>
+          </defs>
+          <ellipse cx="150" cy="370" rx="90" ry="15" fill="rgba(45,36,24,0.1)"/>
+          <rect x="110" y="180" width="80" height="160" rx="8" fill="url(#glass-alex)" stroke="#a68847" stroke-width="2"/>
+          <rect x="115" y="200" width="70" height="135" rx="6" fill="#8B4513" opacity="0.7"/>
+          <rect x="130" y="150" width="40" height="30" rx="4" fill="url(#gold-full)" stroke="#a68847" stroke-width="1.5"/>
+          <rect x="135" y="140" width="30" height="15" rx="2" fill="#d4b976"/>
+          <rect x="120" y="240" width="60" height="60" rx="3" fill="rgba(255,255,255,0.15)" stroke="#c9a961" stroke-width="1"/>
+          <circle cx="150" cy="270" r="18" fill="none" stroke="#d4b976" stroke-width="1.5"/>
+          <text x="150" y="278" text-anchor="middle" font-family="serif" font-size="10" font-weight="700" fill="#d4b976">X</text>
+          <ellipse cx="125" cy="220" rx="8" ry="25" fill="white" opacity="0.3"/>
+        </svg>
+        <span class="product-badge">Xerjoff</span>
+      </div>
+      <div class="product-details">
+        <p class="product-house">Xerjoff</p>
+        <h2 class="product-name">Alexandria II Anniversary</h2>
+        <p class="product-desc">L'œuvre maîtresse de Xerjoff. Une fragrance monumentale, née de l'or, du oud et de la rose absolue — tribute à l'ancienne Alexandrie.</p>
+        <div class="product-pyramid">
+          <div class="pyramid-row">
+            <span class="pyramid-label">Tête</span>
+            <span class="pyramid-notes">Rose Turque, Safran, Bergamote</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Cœur</span>
+            <span class="pyramid-notes">Oud, Rose Absolue, Jasmin, Encens</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Fond</span>
+            <span class="pyramid-notes">Ambre, Bois de Santal, Musc Blanc</span>
+          </div>
+        </div>
+        <div class="product-formats">
+          <span class="format-tag">2 ml</span>
+          <span class="format-tag">5 ml</span>
+          <span class="format-tag">10 ml</span>
+        </div>
+        <div class="product-cta">
+          <a href="commander.html" class="btn-primary"><span>Commander</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 5. LV Immensité -->
+    <article class="product-card" data-house="lv" id="immensite">
+      <div class="product-img">
+        <svg class="product-visual" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="lv-bottle-full" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:#507050;stop-opacity:0.6" />
+              <stop offset="100%" style="stop-color:#2d4d2d;stop-opacity:0.8" />
+            </linearGradient>
+          </defs>
+          <ellipse cx="150" cy="370" rx="80" ry="13" fill="rgba(45,36,24,0.08)"/>
+          <rect x="120" y="190" width="60" height="145" rx="4" fill="rgba(249,247,244,0.3)" stroke="#6b5e52" stroke-width="2"/>
+          <rect x="125" y="210" width="50" height="120" rx="3" fill="url(#lv-bottle-full)"/>
+          <rect x="135" y="162" width="30" height="28" rx="2" fill="#4a3f35" stroke="#2d2418" stroke-width="1.5"/>
+          <rect x="138" y="152" width="24" height="12" rx="1" fill="#6b5e52"/>
+          <rect x="130" y="250" width="40" height="40" rx="2" fill="rgba(255,255,255,0.15)" stroke="#6b5e52" stroke-width="1"/>
+          <text x="150" y="277" text-anchor="middle" font-family="serif" font-size="18" font-weight="700" fill="#6b5e52">LV</text>
+          <rect x="128" y="220" width="10" height="80" rx="2" fill="white" opacity="0.25"/>
+        </svg>
+        <span class="product-badge">Louis Vuitton</span>
+      </div>
+      <div class="product-details">
+        <p class="product-house">Louis Vuitton</p>
+        <h2 class="product-name">Immensité</h2>
+        <p class="product-desc">L'immensité du ciel et de la mer capturée dans un flacon. Une composition boisée aromatique d'une liberté absolue signée Jacques Cavallier.</p>
+        <div class="product-pyramid">
+          <div class="pyramid-row">
+            <span class="pyramid-label">Tête</span>
+            <span class="pyramid-notes">Cardamome, Gingembre, Poivre</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Cœur</span>
+            <span class="pyramid-notes">Cèdre, Labdanum, Cyprès</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Fond</span>
+            <span class="pyramid-notes">Vétiver, Bois de Santal, Musc</span>
+          </div>
+        </div>
+        <div class="product-formats">
+          <span class="format-tag">2 ml</span>
+          <span class="format-tag">5 ml</span>
+          <span class="format-tag">10 ml</span>
+        </div>
+        <div class="product-cta">
+          <a href="commander.html" class="btn-primary"><span>Commander</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 6. SHL God of Fire -->
+    <article class="product-card" data-house="shl" id="godoffire">
+      <div class="product-img">
+        <svg class="product-visual" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="fire-full" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:#d04020;stop-opacity:0.5" />
+              <stop offset="100%" style="stop-color:#8b1a0a;stop-opacity:0.9" />
+            </linearGradient>
+          </defs>
+          <ellipse cx="150" cy="370" rx="82" ry="13" fill="rgba(45,36,24,0.09)"/>
+          <rect x="118" y="188" width="64" height="148" rx="7" fill="rgba(249,247,244,0.3)" stroke="#8b1a0a" stroke-width="2"/>
+          <rect x="123" y="208" width="54" height="123" rx="6" fill="url(#fire-full)"/>
+          <rect x="133" y="158" width="34" height="30" rx="4" fill="#2d2418" stroke="#1a1410" stroke-width="1.5"/>
+          <circle cx="150" cy="172" r="7" fill="#8b1a0a"/>
+          <rect x="128" y="250" width="44" height="44" rx="22" fill="rgba(255,255,255,0.12)" stroke="#d04020" stroke-width="1.5"/>
+          <path d="M 150 260 Q 145 270 150 280 Q 155 270 150 260" fill="#d04020" opacity="0.6"/>
+          <ellipse cx="132" cy="228" rx="7" ry="23" fill="white" opacity="0.25"/>
+        </svg>
+        <span class="product-badge">SHL 777</span>
+      </div>
+      <div class="product-details">
+        <p class="product-house">S.HL 777</p>
+        <h2 class="product-name">God of Fire</h2>
+        <p class="product-desc">Une fragrance de feu sacré et de mystère profond. Encens, cuir brûlé et résines millénaires pour les esprits audacieux.</p>
+        <div class="product-pyramid">
+          <div class="pyramid-row">
+            <span class="pyramid-label">Tête</span>
+            <span class="pyramid-notes">Encens, Poivre Noir, Aldéhydes</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Cœur</span>
+            <span class="pyramid-notes">Cuir, Oud Fumé, Rose Noire</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Fond</span>
+            <span class="pyramid-notes">Résine de Benjoin, Ambre Gris, Bois Sacré</span>
+          </div>
+        </div>
+        <div class="product-formats">
+          <span class="format-tag">2 ml</span>
+          <span class="format-tag">5 ml</span>
+          <span class="format-tag">10 ml</span>
+        </div>
+        <div class="product-cta">
+          <a href="commander.html" class="btn-primary"><span>Commander</span></a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">SCENTRA</p>
+        <p class="footer-tagline">Décantes de Parfum d'Exception</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <p class="col-title">Navigation</p>
+          <a href="collection.html">Collection</a>
+          <a href="maisons.html">Les Maisons</a>
+          <a href="commander.html">Commander</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <p class="col-title">Informations</p>
+          <a href="commander.html#livraison">Livraison</a>
+          <a href="commander.html#faq">FAQ</a>
+          <a href="contact.html">Nous écrire</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 SCENTRA — Tous droits réservés.</p>
+      <p>Décantes réalisées avec authenticité et passion.</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
