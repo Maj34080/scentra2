@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — SCENTRA</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-main">SCENTRA</span>
+        <span class="logo-sub">Décantes d'Exception</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="maisons.html">Les Maisons</a></li>
+        <li><a href="commander.html">Commander</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="nav-burger" id="navBurger"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="index.html">Accueil</a>
+      <a href="collection.html">Collection</a>
+      <a href="maisons.html">Les Maisons</a>
+      <a href="commander.html">Commander</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-line"></div>
+    <h1>Nous <em>Écrire</em></h1>
+    <p>Pour toute commande, question ou conseil olfactif — nous vous répondons dans les 24h.</p>
+  </section>
+
+  <!-- CONTACT INFO -->
+  <div style="max-width:960px; margin: 0 auto; padding: 0 56px 72px; display:grid; grid-template-columns: repeat(3,1fr); gap:24px;">
+    <div style="background:white; border:1px solid var(--bordure); border-radius:4px; padding:40px; text-align:center;">
+      <p style="font-family:var(--font-display); font-size:28px; color:var(--or-fonce); margin-bottom:12px;">✉</p>
+      <p style="font-family:var(--font-body); font-size:11px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--or-fonce); margin-bottom:12px;">Email</p>
+      <p style="font-family:var(--font-body); font-size:15px; color:var(--brun);">contact@scentra.fr</p>
+    </div>
+    <div style="background:white; border:1px solid var(--bordure); border-radius:4px; padding:40px; text-align:center;">
+      <p style="font-family:var(--font-display); font-size:28px; color:var(--or-fonce); margin-bottom:12px;">◎</p>
+      <p style="font-family:var(--font-body); font-size:11px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--or-fonce); margin-bottom:12px;">Instagram</p>
+      <p style="font-family:var(--font-body); font-size:15px; color:var(--brun);">@scentra.decantes</p>
+    </div>
+    <div style="background:white; border:1px solid var(--bordure); border-radius:4px; padding:40px; text-align:center;">
+      <p style="font-family:var(--font-display); font-size:28px; color:var(--or-fonce); margin-bottom:12px;">◷</p>
+      <p style="font-family:var(--font-body); font-size:11px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--or-fonce); margin-bottom:12px;">Réponse</p>
+      <p style="font-family:var(--font-body); font-size:15px; color:var(--brun);">Sous 24h ouvrées</p>
+    </div>
+  </div>
+
+  <!-- FORM -->
+  <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+
+    <div style="font-family:var(--font-body); font-size:17px; color:var(--brun); line-height:1.8; padding-bottom:32px; border-bottom:1px solid var(--bordure); margin-bottom:8px;">
+      Utilisez ce formulaire pour passer une commande ou poser vos questions. Précisez les fragrances et formats souhaités dans le champ message.
+    </div>
+
+    <div class="field-group">
+      <label for="prenom">Prénom & Nom</label>
+      <input type="text" id="prenom" name="prenom" placeholder="Votre nom complet" required>
+    </div>
+
+    <div class="field-group">
+      <label for="email">Adresse Email</label>
+      <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+    </div>
+
+    <div class="field-group">
+      <label for="sujet">Sujet</label>
+      <select id="sujet" name="sujet" required>
+        <option value="">— Choisir un sujet —</option>
+        <option value="commande">Passer une commande</option>
+        <option value="conseil">Conseil olfactif</option>
+        <option value="livraison">Question sur la livraison</option>
+        <option value="autre">Autre</option>
+      </select>
+    </div>
+
+    <div class="field-group">
+      <label for="fragrances">Fragrances Souhaitées (optionnel)</label>
+      <select id="fragrances" name="fragrances">
+        <option value="">— Sélectionner —</option>
+        <option>Hibiscus Mahajad</option>
+        <option>Xerjoff — Naxos</option>
+        <option>Xerjoff — Torino 22</option>
+        <option>Xerjoff — Alexandria II Anniversary</option>
+        <option>Louis Vuitton — Immensité</option>
+        <option>SHL 777 — God of Fire</option>
+        <option>Plusieurs fragrances (préciser dans le message)</option>
+      </select>
+    </div>
+
+    <div class="field-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Précisez vos souhaits : fragrances, formats (2ml / 5ml / 10ml), adresse de livraison, questions..." required></textarea>
+    </div>
+
+    <div style="display:flex; align-items:center; gap:12px;">
+      <input type="checkbox" id="consent" name="consent" required style="width:18px; height:18px; accent-color:var(--or-fonce); cursor:pointer;">
+      <label for="consent" style="font-family:var(--font-body); font-size:14px; color:var(--brun); cursor:pointer; letter-spacing:0.02em; text-transform:none; font-weight:400;">
+        J'accepte que mes informations soient utilisées pour traiter ma demande.
+      </label>
+    </div>
+
+    <div>
+      <button type="submit" class="btn-primary" id="submitBtn"><span>Envoyer le Message</span></button>
+    </div>
+
+    <!-- Confirmation -->
+    <div id="formConfirm" style="display:none; background:white; border:2px solid var(--or); border-radius:4px; padding:32px; text-align:center;">
+      <p style="font-family:var(--font-display); font-size:24px; font-weight:700; color:var(--or-fonce); margin-bottom:12px;">Message Envoyé</p>
+      <p style="font-family:var(--font-body); font-size:16px; color:var(--brun); line-height:1.7;">Merci pour votre message. Nous vous répondrons dans les 24 heures ouvrées.</p>
+    </div>
+
+  </form>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">SCENTRA</p>
+        <p class="footer-tagline">Décantes de Parfum d'Exception</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <p class="col-title">Navigation</p>
+          <a href="collection.html">Collection</a>
+          <a href="maisons.html">Les Maisons</a>
+          <a href="commander.html">Commander</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <p class="col-title">Informations</p>
+          <a href="commander.html#livraison">Livraison</a>
+          <a href="commander.html#faq">FAQ</a>
+          <a href="contact.html">Nous écrire</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 SCENTRA — Tous droits réservés.</p>
+      <p>Décantes réalisées avec authenticité et passion.</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/animations.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('contactForm');
+      const confirm = document.getElementById('formConfirm');
+      const btn = document.getElementById('submitBtn');
+      
+      btn.querySelector('span').textContent = 'Envoi en cours...';
+      btn.style.opacity = '0.6';
+      btn.style.pointerEvents = 'none';
+      
+      setTimeout(() => {
+        form.querySelectorAll('.field-group, button[type=submit], div:has(input[type=checkbox])').forEach(el => {
+          el.style.opacity = '0';
+          el.style.transition = 'opacity 0.4s ease';
+        });
+        setTimeout(() => {
+          confirm.style.display = 'block';
+          confirm.style.opacity = '0';
+          confirm.style.transition = 'opacity 0.6s ease';
+          setTimeout(() => { confirm.style.opacity = '1'; }, 50);
+        }, 500);
+      }, 1400);
+    }
+  </script>
+</body>
+</html>

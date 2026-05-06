@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection — SCENTRA</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-main">SCENTRA</span>
+        <span class="logo-sub">Décantes d'Exception</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="collection.html" class="active">Collection</a></li>
+        <li><a href="maisons.html">Les Maisons</a></li>
+        <li><a href="commander.html">Commander</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-burger" id="navBurger"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="index.html">Accueil</a>
+      <a href="collection.html">Collection</a>
+      <a href="maisons.html">Les Maisons</a>
+      <a href="commander.html">Commander</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-line"></div>
+    <h1>La Collection <em>Complète</em></h1>
+    <p>Cinq fragrances d'exception, sélectionnées pour leur singularité et leur prestige absolu.</p>
+  </section>
+
+  <div class="collection-filters">
+    <span class="filter-label">Filtrer par maison :</span>
+    <button class="filter-btn active" data-filter="all">Toutes</button>
+    <button class="filter-btn" data-filter="xerjoff">Xerjoff</button>
+    <button class="filter-btn" data-filter="lv">Louis Vuitton</button>
+    <button class="filter-btn" data-filter="shl">SHL 777</button>
+    <button class="filter-btn" data-filter="mahajad">Mahajad</button>
+  </div>
+
+  <div class="collection-grid">
+
+    <!-- 1. Hibiscus Mahajad -->
+    <article class="product-card" data-house="mahajad" id="hibiscus">
+      <div class="product-img">
+        <img src="images/hibiscus-mahajad.png" alt="Hibiscus Mahajad" class="product-visual">
+        <span class="product-badge">Mahajad</span>
+      </div>
+      <div class="product-details">
+        <p class="product-house">Mahajad</p>
+        <h2 class="product-name">Hibiscus Mahajad</h2>
+        <p class="product-desc">Une ode florale solaire aux accents fruités, portée par l'hibiscus éclatant et la douceur de la vanille.</p>
+        <div class="product-pyramid">
+          <div class="pyramid-row">
+            <span class="pyramid-label">Tête</span>
+            <span class="pyramid-notes">Hibiscus, Fruits Rouges</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Cœur</span>
+            <span class="pyramid-notes">Rose, Litchi</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Fond</span>
+            <span class="pyramid-notes">Musc, Vanille</span>
+          </div>
+        </div>
+        <div class="product-formats">
+          <span class="format-tag">2 ml</span>
+          <span class="format-tag">5 ml</span>
+          <span class="format-tag">10 ml</span>
+        </div>
+        <div class="product-cta">
+          <a href="commander.html" class="btn-primary"><span>Commander</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2. Xerjoff Naxos -->
+    <article class="product-card" data-house="xerjoff" id="naxos">
+      <div class="product-img">
+        <img src="images/naxos.png" alt="Xerjoff Naxos" class="product-visual">
+        <span class="product-badge">Xerjoff</span>
+      </div>
+      <div class="product-details">
+        <p class="product-house">Xerjoff</p>
+        <h2 class="product-name">Naxos</h2>
+        <p class="product-desc">Un oriental envoûtant qui capture la douceur méditerranéenne — miel, lavande et tabac se fondent en une symphonie opulente.</p>
+        <div class="product-pyramid">
+          <div class="pyramid-row">
+            <span class="pyramid-label">Tête</span>
+            <span class="pyramid-notes">Bergamote, Lavande, Citron</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Cœur</span>
+            <span class="pyramid-notes">Miel, Cannelle, Cashmeran</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Fond</span>
+            <span class="pyramid-notes">Vanille, Tabac, Tonka</span>
+          </div>
+        </div>
+        <div class="product-formats">
+          <span class="format-tag">2 ml</span>
+          <span class="format-tag">5 ml</span>
+          <span class="format-tag">10 ml</span>
+        </div>
+        <div class="product-cta">
+          <a href="commander.html" class="btn-primary"><span>Commander</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3. Xerjoff Alexandria II -->
+    <article class="product-card" data-house="xerjoff" id="alexandria">
+      <div class="product-img">
+        <img src="images/alexandria.png" alt="Xerjoff Alexandria II" class="product-visual">
+        <span class="product-badge">Xerjoff</span>
+      </div>
+      <div class="product-details">
+        <p class="product-house">Xerjoff</p>
+        <h2 class="product-name">Alexandria II Anniversary</h2>
+        <p class="product-desc">L'œuvre maîtresse de Xerjoff. Une fragrance monumentale orientale florale — tribute à l'ancienne Alexandrie.</p>
+        <div class="product-pyramid">
+          <div class="pyramid-row">
+            <span class="pyramid-label">Tête</span>
+            <span class="pyramid-notes">Apple, Rose, Bergamote</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Cœur</span>
+            <span class="pyramid-notes">Lily-of-the-Valley, Lavande, Oud</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Fond</span>
+            <span class="pyramid-notes">Cannelle, Cèdre, Musc, Ambre</span>
+          </div>
+        </div>
+        <div class="product-formats">
+          <span class="format-tag">2 ml</span>
+          <span class="format-tag">5 ml</span>
+          <span class="format-tag">10 ml</span>
+        </div>
+        <div class="product-cta">
+          <a href="commander.html" class="btn-primary"><span>Commander</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 4. LV Immensité -->
+    <article class="product-card" data-house="lv" id="immensite">
+      <div class="product-img">
+        <img src="images/immensite.png" alt="Louis Vuitton Immensité" class="product-visual">
+        <span class="product-badge">Louis Vuitton</span>
+      </div>
+      <div class="product-details">
+        <p class="product-house">Louis Vuitton</p>
+        <h2 class="product-name">Immensité</h2>
+        <p class="product-desc">L'immensité du ciel et de la mer capturée dans un flacon. Une composition boisée aromatique d'une liberté absolue signée Jacques Cavallier.</p>
+        <div class="product-pyramid">
+          <div class="pyramid-row">
+            <span class="pyramid-label">Tête</span>
+            <span class="pyramid-notes">Gingembre, Ambrette</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Cœur</span>
+            <span class="pyramid-notes">Sauge, Labdanum</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Fond</span>
+            <span class="pyramid-notes">Ambrocenide, Bois</span>
+          </div>
+        </div>
+        <div class="product-formats">
+          <span class="format-tag">2 ml</span>
+          <span class="format-tag">5 ml</span>
+          <span class="format-tag">10 ml</span>
+        </div>
+        <div class="product-cta">
+          <a href="commander.html" class="btn-primary"><span>Commander</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 5. SHL God of Fire -->
+    <article class="product-card" data-house="shl" id="godoffire">
+      <div class="product-img">
+        <img src="images/god-of-fire.png" alt="SHL God of Fire" class="product-visual">
+        <span class="product-badge">SHL 777</span>
+      </div>
+      <div class="product-details">
+        <p class="product-house">S.HL 777</p>
+        <h2 class="product-name">God of Fire</h2>
+        <p class="product-desc">Une fragrance tropicale enveloppante aux notes de noix de coco crémeuse, ylang-ylang sensuel et vanille douce.</p>
+        <div class="product-pyramid">
+          <div class="pyramid-row">
+            <span class="pyramid-label">Tête</span>
+            <span class="pyramid-notes">Ylang-Ylang, Fleur d'Oranger</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Cœur</span>
+            <span class="pyramid-notes">Noix de Coco, Tuberose</span>
+          </div>
+          <div class="pyramid-row">
+            <span class="pyramid-label">Fond</span>
+            <span class="pyramid-notes">Vanille, Tonka, Musc</span>
+          </div>
+        </div>
+        <div class="product-formats">
+          <span class="format-tag">2 ml</span>
+          <span class="format-tag">5 ml</span>
+          <span class="format-tag">10 ml</span>
+        </div>
+        <div class="product-cta">
+          <a href="commander.html" class="btn-primary"><span>Commander</span></a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">SCENTRA</p>
+        <p class="footer-tagline">Décantes de Parfum d'Exception</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <p class="col-title">Navigation</p>
+          <a href="collection.html">Collection</a>
+          <a href="maisons.html">Les Maisons</a>
+          <a href="commander.html">Commander</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <p class="col-title">Informations</p>
+          <a href="commander.html#livraison">Livraison</a>
+          <a href="commander.html#faq">FAQ</a>
+          <a href="contact.html">Nous écrire</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 SCENTRA — Tous droits réservés.</p>
+      <p>Décantes réalisées avec authenticité et passion.</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
